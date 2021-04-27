@@ -91,15 +91,3 @@ yTest2=mlp.predict(xTest2)
 print('Test accuracy for TRAINING dataset=',accuracy_score(tTest2,yTest2))
 print('Confusion matrix for TRAINING dataset=')
 print(confusion_matrix(tTest2,yTest2) )
-
-# yTrain=mlp.predict(xTrain2)
-# print('Train accuracy= ', accuracy_score(tTrain2, yTrain))
-
-# yTest=mlp.predict(xTest1)
-# print('Test accuracy= ', accuracy_score( tTest1, yTest))
-
-# print('Confusion Matrix for testing: ')
-# print(confusion_matrix( tTest1, yTest))
-
-# print('Confusion Matrix for training: ')
-# print(confusion_matrix(tTrain2, yTrain))
