@@ -65,7 +65,7 @@ xTrain1, xTest1, tTrain1, tTest1 = train_test_split(X1,T1, test_size=0.2)
 #Training data
 xTrain2, xTest2, tTrain2, tTest2 = train_test_split(X2,T2, test_size=0.5)
 
-mlp = MLPClassifier(alpha=1e-5,verbose=1,max_iter=500,hidden_layer_sizes=(22,22),random_state=42)
+mlp = MLPClassifier(alpha=1e-5,verbose=1,max_iter=1000,hidden_layer_sizes=(22,22),random_state=42)
 
 #Training the Testing data
 mlp.fit(xTrain1, tTrain1)
