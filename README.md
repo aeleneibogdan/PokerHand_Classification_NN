@@ -2,7 +2,7 @@
 
 Dataset link: https://archive.ics.uci.edu/ml/datasets/Poker+Hand
 
-For this project I tried to determine the accuracy of a trained machine in predicting poker hands based on the input data of the two CSV dataset files: poker-hand-testing.data and poker-hand-training-true.data. 
+For this project I tried to determine the accuracy of a trained machine in predicting poker hands based on the input data of the two CSV dataset files: poker-hand-testing.data and poker-hand-training-true.data .
 
 Attribute Information:
 
