@@ -59,10 +59,10 @@ X2=datatrain.iloc[:,:11]
 T1=datatest['Player Hand']
 T2=datatrain['Player Hand']
 
-#Testing data
+#splitting Testing dataset
 xTrain1, xTest1, tTrain1, tTest1 = train_test_split(X1,T1, test_size=0.2)
 
-#Training data
+#splitting Training dataset
 xTrain2, xTest2, tTrain2, tTest2 = train_test_split(X2,T2, test_size=0.5)
 
 mlp = MLPClassifier(alpha=1e-5,verbose=1,max_iter=1000,hidden_layer_sizes=(22,22),random_state=42)
@@ -91,3 +91,4 @@ yTest2=mlp.predict(xTest2)
 print('Test accuracy for TRAINING dataset=',accuracy_score(tTest2,yTest2))
 print('Confusion matrix for TRAINING dataset=')
 print(confusion_matrix(tTest2,yTest2) )
+
