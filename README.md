@@ -52,7 +52,7 @@ Ordinal (0-9)
 
 Training the datasets – MLPClassifier
 
-	The first step in training the data is to split it and this is the most necessary step for this method.
+The first step in training the data is to split it and this is the most necessary step for this method.
 In this manner, the X1 and X2 matrices will contain the inputs, meaning the suits and the ranks of the cards, and the T1 and T2 matrices will contain the output, meaning the player’s hand. I chose to initialize them X1, T1 and X2, T2 to avoid further errors and to assign correspondingly the data from each set, in this case 1 being an index for Testing dataset, while 2 representing the Training dataset
 	The next step is to split the data further into xTrain, xTest, tTrain, tTest with the train_test_split function from the sklearn library. In our case, we will divide for both datasets:
 •	xTrain1, xTest1, tTrain1, tTest1
