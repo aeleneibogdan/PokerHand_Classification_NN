@@ -50,3 +50,22 @@ Ordinal (0-9)
 8: Straight flush; straight + flush
 9: Royal flush; {Ace, King, Queen, Jack, Ten} + flush
 
+Training the datasets – MLPClassifier
+
+	The first step in training the data is to split it and this is the most necessary step for this method.
+In this manner, the X1 and X2 matrices will contain the inputs, meaning the suits and the ranks of the cards, and the T1 and T2 matrices will contain the output, meaning the player’s hand. I chose to initialize them X1, T1 and X2, T2 to avoid further errors and to assign correspondingly the data from each set, in this case 1 being an index for Testing dataset, while 2 representing the Training dataset
+	The next step is to split the data further into xTrain, xTest, tTrain, tTest with the train_test_split function from the sklearn library. In our case, we will divide for both datasets:
+•	xTrain1, xTest1, tTrain1, tTest1
+•	xTrain2, xTest2, tTrain2, tTest2
+After several runs, I found out that the size of the hidden layers of our neural network is decreasing the accuracy and we will try again many combinations to determine the best one.
+For  the trainings  I used the following parameters from the MLPClassifier: 
+•	alpha=1e-5 – regularization term parameter.
+•	verbose=1 - whether to print progress messages to stdout.
+•	Maximum iterations = 1000
+•	hidden_layer_sizes = (15,15)
+•	solver= ‘adam’ which is set by default.
+•	random_state=1 - determines random number generation for weights and bias initialization, train-test split if early stopping is used, and batch sampling when solver='sgd' or 'adam'. Pass an int for reproducible results across multiple function calls
+I chose the ‘adam’ solver because I read that it’s effective and achieves good results fast. 
+
+
+As we increase the size of the hidden layers, we can see that the accuracy will increase and the confusion matrix will get better and better as the Neural Network start to predict more correctly the player's hands.
